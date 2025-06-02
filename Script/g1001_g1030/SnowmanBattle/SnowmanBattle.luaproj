@@ -1,0 +1,45 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1af634f1-13c1-4c13-a6e5-bb3a18cb22d3}</ProjectGuid>
+    <!--$guid1$-->
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>SnowmanBattle</Name>
+    <RootNamespace>SnowmanBattle</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src\config\GameConfig.lua" />
+    <Compile Include="src\config\SnowBallConfig.lua" />
+    <Compile Include="src\Flag.lua" />
+    <Compile Include="src\Listener.lua" />
+    <Compile Include="src\Magic.lua" />
+    <Compile Include="src\Match.lua" />
+    <Compile Include="src\Player.lua" />
+    <Compile Include="src\RankNpc.lua" />
+    <Compile Include="src\ScriptMain.lua" />
+    <Compile Include="src\Shop.lua" />
+    <Compile Include="src\Snowman.lua" />
+    <Compile Include="src\Timer.lua" />
+    <Compile Include="src\TipNpc.lua" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\config\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>

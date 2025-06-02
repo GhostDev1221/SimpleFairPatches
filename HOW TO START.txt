@@ -1,0 +1,3 @@
+start GameServer_d.exe
+start runserver(U).bat
+start WinShell_d.exe
