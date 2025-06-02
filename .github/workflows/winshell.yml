@@ -1,0 +1,17 @@
+name: Run winshell Server
+
+on:
+  workflow_dispatch:  # Manual trigger via GitHub UI
+
+jobs:
+  run-server:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Run Game Server
+      run: |
+        echo "Starting WinShell_d.exe..."
+        ./WinShell_d.exe
