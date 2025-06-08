@@ -1,0 +1,17 @@
+name: Run GameServer .bat
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-bat:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Run GameServer via BAT file
+      shell: cmd
+      run: |
+        call runserver.bat
